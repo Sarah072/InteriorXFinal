@@ -1,0 +1,77 @@
+
+.coltask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coltaskHeader{
+    margin-top: 10%;
+   
+    width: 78%;
+  
+  }
+  .task-form {
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  
+  .task-board {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+    padding-bottom: 30px;
+
+   
+  }
+  .taskboard2{
+    width: 1200px;
+  }
+  .to-do,
+  .in-progress,
+  .completed {
+    flex: 1;
+    margin: 0 1%;
+   
+    background-color: aliceblue;
+    border-radius: 20px;
+    
+    
+  }
+  .completed{
+    margin-right: 5%;
+  }
+  .to-do{
+    margin-left: 5%;
+  }
+  .task {
+
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    position: relative; 
+  }
+
+  .task::before {
+    content: "";
+    position: absolute;
+    top: 3;
+    left: 30px;
+    width: 5px; 
+    height: 90%; 
+    background-color: #87CEFA;
+    border-radius: 20px 0 0 20px; 
+  }
+.task p{
+  color: rgb(0, 0, 0);
+}
+  .task {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+  
+  .task button {
+    margin-top: 10px; 
+  }

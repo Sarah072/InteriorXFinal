@@ -1,0 +1,317 @@
+/* Styling for the article container */
+.article-container {
+    max-width: 8000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 231, 231);
+    padding-left: 370px;
+    padding-right: 370px;
+}
+  
+  /* Styling for the article title */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Styling for paragraphs */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .image-container {
+    margin-bottom: 20px;
+    text-align: center; /* Center the images horizontally */
+}
+
+/* Styling for images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block; /* Ensure proper alignment within the container */
+    margin: 0 auto; /* Center the images horizontally */
+}
+  
+  /* Styling for image descriptions */
+  .image-container p {
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+  }
+  .article1pic1{
+    width: 100%;
+  }
+
+
+  /* Styling for the comment section */
+.comment-section {
+ 
+  padding: 20px;
+  border: 1px solid #121212;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+.comment {
+ 
+  padding: 10px;
+  border: 1px solid #ccc;
+ 
+}
+
+.comment p {
+  margin: 0;
+}
+.comments{
+  background-color: #f9f9f9;
+}
+/* Styling for the comment textarea */
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+/* Styling for the comment button */
+.comment-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.comment-section button:hover {
+  background-color: #0056b3;
+}
+
+/* Add your existing CSS styles above this point */
+
+.like-section {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.like-button {
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.like-button.liked {
+  color: red;
+}
+
+.like-count {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+}/* Styles for the horizontal links section */
+.horizontal-links-section {
+  display: block;
+  
+  background-color: #000000;
+  padding: 10px 0;
+  margin-top: 70px;
+}
+
+/* Styles for individual links */
+.horizontal-links-section a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-right: 8px;
+  padding: 8px;
+  margin: 0 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.horizontal-links-section a.active,
+.horizontal-links-section a:hover {
+ text-decoration: underline;
+}
+
+.publisher{
+  text-align: center;
+}
+.Heading{
+ 
+  text-align: center;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+.colorpsy{
+  width: 2000px;
+  height: 1000px;
+}
+.article4pic1{
+  width: 1800px;
+  height: 1000px;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .article-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .image-container {
+    margin-bottom: 10px;
+  }
+
+  .comment-section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .like-section {
+    margin-top: 10px;
+  }
+
+  .horizontal-links-section {
+    padding: 5px 0;
+    margin-top: 70px;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .comment-section {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .like-button {
+    padding: 5px 10px;
+  }
+
+  .like-count {
+    font-size: 12px;
+  }
+
+  .horizontal-links-section {
+    padding: 5px 0;
+    margin-top: 70px;
+  }
+
+  .horizontal-links-section a {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin: 0 2px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .article-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .image-container p {
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .comment-section {
+    margin: 3px;
+    padding: 8px;
+  }
+
+  .comment-section textarea {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .comment-section button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .like-button {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .like-count {
+    font-size: 10px;
+  }
+
+  .horizontal-links-section {
+    padding: 5px 0;
+    margin-top: 70px;
+  }
+
+  .horizontal-links-section a {
+    padding: 2px 4px;
+    font-size: 10px;
+    margin: 0 1px;
+  }
+
+  .publisher {
+    font-size: 10px;
+  }
+
+  .Heading {
+    font-size: 14px;
+  }
+
+  .colorpsy,
+  .article4pic1 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Rest of your styles */

@@ -1,0 +1,145 @@
+
+.parent4 {
+  margin-top: 50px;
+}
+
+.child211 {
+ 
+  background: rgb(46, 139, 87);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  padding-bottom: 140px;
+  color: aliceblue;
+  padding-right: 80px;
+  padding-left:20px;
+  height: 600px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 20px;
+}
+
+.signin {
+  font-weight: 400;
+  margin-left: 60px;
+  
+}
+
+.content {
+  margin-left: 60px;
+}
+
+#fname,
+#username2,
+#lname,
+#emailS,
+#passS {
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+  width: 95%;
+  color: white;
+}
+.signin2{
+  margin-right: 20px;
+  margin-top: -10px;
+}
+.buttonsignup {
+  background-color: rgb(32, 178, 170);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 60px;
+  cursor: pointer;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 10px;
+  transition: background-color 0.5s ease;
+  font-weight: bold;
+}
+
+.buttonsignup:hover {
+  background-color: white;
+  color: black;
+}
+
+.agree {
+  font-size: small;
+  color: aliceblue;
+  width: 400px;
+}
+
+
+.FirstParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstdiv {
+  margin-left: 120px;
+  margin-top: 50px;
+}
+
+.couch1 {
+  height: 600px;
+  width: 640px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 80px;
+}
+
+@media (max-width: 1024px) {
+  .FirstParent {
+      flex-direction: column;
+  }
+
+  .firstdiv {
+      margin-left: 0;
+  }
+
+  .couch1 {
+    display: none;
+      margin-left: 0;
+      width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .child211 {
+      padding-right: 30px;
+  }
+
+  .content {
+      margin-left: 30px;
+  }
+  
+  .buttonsignup {
+      margin-left: 80px;
+  }
+  
+#fname,
+#username2,
+#lname,
+#emailS,
+#passS {
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+  width: 95%;
+  color: white;
+ 
+}
+}
+
+@media (max-width: 480px) {
+  .FirstParent {
+      display: none;
+  }
+
+  .child211 {
+      padding-right: 20px;
+  }
+}

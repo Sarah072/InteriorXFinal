@@ -1,0 +1,267 @@
+/* App.css */
+
+.postContent {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .imgGalleryH1 {
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the rows horizontally */
+    gap: 30px; /* Gap between images and rows */
+    max-width: 1200px; /* Maximum width of the entire grid */
+    margin: 0 auto; /* Center the entire grid */
+  
+   
+  }
+  .selected-image-name{
+    display: block;
+  }
+  
+  .image-container {
+    max-width: calc(33.33% - 20px); /* Set maximum width for each image container */
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 50px;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  }
+  
+  .like-button2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff5a5f;
+  }
+  
+  .like-button2:hover {
+    background-color: #007bdf;
+  }
+  
+  
+  .close-button {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  
+  .user-info {
+    display: flex;
+    align-items: center; /* Vertically center the username and date */
+  }
+  
+  .username {
+    margin-right: 10px; /* Add some spacing between username and date */
+  }
+  
+  .post-date {
+    color: gray; /* Optionally style the date text */
+  }
+  
+
+
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+  }
+  
+  .modal-content {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px; 
+    text-align: center;
+  }
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  margin:  20px; /* Center the image horizontally */
+  display: block; /* Remove any spacing under the image */
+}
+.prev-button{
+ 
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.next-button {
+  
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+.content-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* Community.css */
+
+.upload-section {
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-file-input {
+  display: none;
+}
+
+.upload-button {
+  background-color: #007bdf;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: large;
+ 
+ 
+}
+
+.upload-button:hover {
+  background-color: #004183; /* Darken the background color on hover */
+}
+
+.selected-image-name {
+  display: block;
+  margin-top: 10px;
+  color: #333; /* Set the color for the filename text */
+  font-weight: bold;
+}
+
+.post-button {
+  background-color: #004183;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: none;
+}
+
+.post-button:hover {
+  background-color: #0463b1; /* Darken the background color on hover */
+}
+
+
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.image-container {
+  max-width: calc(33.33% - 20px);
+  position: relative;
+  background-color: aliceblue;
+  border-radius: 50px;
+}
+
+.content-wrapper {
+  overflow: hidden; /* Ensure the description doesn't overflow the container */
+  transition: transform 0.3s ease; /* Add smooth transition for zoom effect */
+  border-radius: 50px;
+}
+
+.content-wrapper:hover {
+  transform: scale(1.1);
+  border-radius: 50px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  
+}
+
+.image-description {
+  padding: 10px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the description */
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.upload-section {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.choose-file-input {
+  display: none;
+
+}
+
+.upload-button {
+   background-color: #0056b3;
+ 
+  border: none;
+  padding: 8px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: large;
+  margin-top: 5px;
+  
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}

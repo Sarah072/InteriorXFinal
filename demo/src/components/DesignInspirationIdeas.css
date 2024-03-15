@@ -1,0 +1,101 @@
+.app-container {
+  
+    text-align: center;
+  }
+  
+  .design {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 140px;
+    color: white;
+  }
+  
+  .playlist-dropdown {
+    margin-bottom: 20px;
+  }
+  
+  .playlist-dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .playlist-dropdown select:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 70px;
+    max-width: 1000px; /* Limit the width of the video grid */
+    margin: 0 auto; /* Center the video grid horizontally */
+    margin-top: 10%;
+  
+    
+  }
+  
+.video-grid iframe {
+    width: 500px;   /* Adjust this value to your desired width */
+    height: 300px;  /* Adjust this value to your desired height */
+    border: 8px solid rgb(54, 54, 54); /* Light pink border */
+  }
+  
+  
+/* Responsive adjustments */
+@media (max-width: 1024px ){
+  .video-grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 40px; /* Adjusted gap for smaller screens */
+      max-width: 100%; /* Full width on smaller screens */
+      padding: 0 20px; /* Horizontal padding for better spacing */
+  }
+
+  .video-grid iframe {
+      width: 100%; /* Full width on smaller screens */
+      height: 240px; /* Adjusted height for smaller screens */
+  }
+  .design {
+    font-size: 20px; /* Adjusted font size for smaller screens */
+    margin-bottom: 40px;
+  margin-top: 140px;
+}
+}
+
+@media (max-width: 767px) {
+  .design {
+      font-size: 20px; /* Adjusted font size for smaller screens */
+      margin-bottom: 40px;
+    margin-top: 140px;
+  }
+
+  .playlist-dropdown select {
+      font-size: 12px; /* Adjusted font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .design {
+      font-size: 18px; /* Further adjusted font size for smallest screens */
+      margin-bottom: 40px;
+      margin-top: 140px;
+  }
+
+  .video-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px; /* Adjusted gap for smallest screens */
+      padding: 0 10px; /* Further reduced horizontal padding */
+  }
+
+  .video-grid iframe {
+      height: 180px; /* Further adjusted height for smallest screens */
+  }
+}

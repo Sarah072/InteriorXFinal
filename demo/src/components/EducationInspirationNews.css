@@ -1,0 +1,119 @@
+/* src/components/EducationInspiration.css */
+.eduAndIns {
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .EduH1{
+  
+    margin-bottom: 40px;
+    margin-top: 70px;
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  .news-box {
+    position: relative; /* Make the box position relative for absolute positioning inside */
+    flex-basis: calc(33.33% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: #333;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .read-more {
+    position: absolute;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    border-radius: 10px;
+    z-index: 1; /* Ensure it's above the image */
+  }
+  .news-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .news-box p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: aliceblue;
+  }
+  
+  .news-box a {
+    color: #020202;
+    text-decoration:underline;
+  }
+  
+  .news-box a:hover {
+    text-decoration: underline;
+  }
+  .loading-spinner{
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+  /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .EduH1 {
+   
+    margin-bottom: 40px;
+    margin-top: 70px;
+    padding-top: 30px;
+    text-align: center;
+    color: aliceblue;
+  }
+}
+
+@media (max-width: 767px) {
+  .news-box {
+      flex-basis: calc(50% - 20px); /* 2 columns on smaller screens */
+      margin-left: 10px; /* Adjusting margin */
+  }
+  .EduH1 {
+   
+    margin-bottom: 40px;
+    margin-top: 70px;
+    padding-top: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+}
+
+@media (max-width: 480px) {
+  .news-box {
+      flex-basis: 100%; /* 1 column on the smallest screens */
+      margin-left: 0; /* Resetting margin */
+  }
+  .EduH1 {
+   
+    margin-bottom: 40px;
+    margin-top: 70px;
+    padding-top: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+}
+.news-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust the maximum height as needed */
+  object-fit: cover;
+}
