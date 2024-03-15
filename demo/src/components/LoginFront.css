@@ -1,0 +1,261 @@
+/* Base styles for larger screens */
+.parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parent2 {
+  color: aliceblue;
+  display: flex;
+  margin: 70px;
+}
+
+.img1 {
+  height: 600px;
+  width: 640px;
+  margin-left: 130px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.child21 {
+  background: rgb(46, 139, 87);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  padding-bottom: 70px;
+  color: aliceblue;
+  padding-right: 100px;
+  margin-right: 60px;
+  height: 600px;
+}
+
+.resetPass{
+  background: rgb(46, 139, 87); /* Adjust the RGBA values and alpha value as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding-bottom: 70px;
+  color: aliceblue;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.signup {
+  font-weight:bolder;
+  color: rgb(209, 209, 209);
+  margin-top: -1px;
+}
+
+.signup:hover {
+  color: aliceblue;
+}
+
+.signuplink {
+  text-decoration: none;
+}
+
+.signin {
+  font-weight: 400;
+  margin-left: 400px;
+}
+
+.content {
+  margin-left: 60px;
+}
+
+
+#username,
+#password {
+  border: none;
+  border-radius: 25px; /* Make the input fields round */
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: rgb(1, 1, 1);
+  margin: 15px 0; /* Increase the gap between input fields */
+  padding: 10px; /* Add padding for better visual appeal */
+  background-color: aliceblue;
+}
+
+.parent3 {
+  display: flex;
+  margin-top: 30px; /* Adjust margin for spacing */
+  justify-content: space-between;
+}
+
+
+.ForgetPassword {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px; /* Adjust margin for spacing */
+}
+
+.ForgetPassword:hover {
+  text-decoration: underline;
+}
+
+.buttonReset,
+.button2 {
+  background-color: rgb(32, 178, 170);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 70px; /* Adjust padding for button size */
+  cursor: pointer;
+  margin-top: 20px; /* Adjust margin for spacing */
+  margin-left: 10px;
+  transition: background-color 0.5s ease;
+  font-weight: bold;
+}
+
+.buttonReset:hover,
+.button2:hover {
+  background-color: white;
+  color: black;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+.button2:hover {
+  background-color: white;
+  color: black;
+ 
+
+}
+
+a {
+  margin-left: 90px;
+  color: aliceblue;
+}
+
+a:hover {
+  color: grey;
+}
+
+.bckLoginn {
+  font-weight: bolder;
+  color: aliceblue;
+}
+
+/* Responsive adjustments for max-width: 1024px */
+@media (max-width <= 1024px) {
+  .parent2 {
+    flex-direction: column;
+    align-items: center;
+
+    color: aliceblue;
+    display: flex;
+    margin: 70px;
+  }
+
+  .img1 {
+    display: none; 
+  }
+  .child21 {
+    
+    background: #824601;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    padding-bottom: 180px;
+    color: aliceblue;
+    padding-right: 100px;
+    margin-right: 60px;
+  }
+
+  .signin {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Responsive adjustments for max-width: 767px */
+@media (max-width: 767px) {
+  .parent2 {
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    display: flex;
+    margin: 70px;
+    justify-content: center;
+  }
+
+  .img1 {
+    display: none; /* Hide the left picture div */
+    
+  }
+  .child21 {
+    background: rgba(130, 70, 1, 0.7); /* Adjust the RGBA values and alpha value as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    padding-bottom: 120px;
+    color: aliceblue;
+    padding-right: 100px;
+    margin-right: 60px;
+  }
+
+  .username,
+  .password {
+    margin-right: 0;
+  }
+
+  .ForgetPassword {
+    font-size: small;
+  }
+  .keep{
+    font-size: small;
+  }
+  
+  .button2 {
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: small;
+  }
+  .contentLog{
+    margin-left: 40px;
+  }
+  
+}
+
+/* Responsive adjustments for max-width: 480px */
+@media (max-width: 480px) {
+  .parent2 {
+    margin: 70px;
+    justify-content: center;
+  }
+
+  .child21 {
+    flex: 1;
+    background: rgba(130, 70, 1, 0.7); /* Adjust the RGBA values and alpha value as needed */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    padding-bottom: 120px;
+    color: aliceblue;
+    padding-right: 100px;
+   
+  }
+
+  .username,
+  .password {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .button2 {
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: small;
+  }
+  
+  .img1 {
+    display: none; /* Hide the left picture div */
+  }
+}
+
+
+ 

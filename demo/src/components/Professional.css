@@ -1,0 +1,87 @@
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    
+   
+  }
+  
+  .checkbox-group,
+  .text-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .containerPro label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .containerPro input[type="checkbox"],
+  input[type="text"] {
+    margin-right: 5px;
+  }
+  
+  .containerPro p {
+    margin-top: 10px;
+    font-weight: bold;
+   
+  }
+  
+  
+
+  
+.profession ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profession li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0); /* Set the background color to black */
+  color: white; /* Set the text color to white */
+  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profession li:hover {
+  background-color: #000000; /* Darken the background color on hover */
+}/* Professional.css */
+
+.ProParent {
+  display: flex;
+  padding: 10px;
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set the text color to white */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.ProParent img {
+  border-radius: 5px;
+ 
+}
+
+.ProParent li {
+  list-style-type: none;
+  width: 2000px;
+ 
+}
+.ProImg{
+  margin-left: 30px;
+}
+.chatBtn{
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatBtn:hover {
+  background-color: #45a049;
+}

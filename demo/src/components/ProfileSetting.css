@@ -1,0 +1,213 @@
+
+/* Styling for the main container */
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffdfd;
+    width: 700px;
+    margin: 100px auto 10px; /* Updated margin properties to create a gap */
+    padding-bottom: 30px;
+  }
+  .black-icon {
+    color: black;
+    border: none;
+   
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .upload-form{
+    margin-top: 10px;
+  }
+  .notFound{
+    font-size: small;
+    margin-top: 50px;
+  }
+  .black-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the profile picture section */
+  .profile-pic {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 70px;
+    overflow: hidden; /* Add this line to hide any overflow */
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .selected-image {
+    max-width: 150px;
+    margin-top: 10px;
+  }
+ 
+  /* Styling for user details section */
+.user-detailsprofile {
+  margin-top: 20px;
+}
+
+.user-detailsprofile div {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center; /* Center the elements vertically */
+}
+
+.user-detailsprofile label {
+  width: 120px;
+  font-weight: bold;
+}
+
+.user-detailsprofile input {
+  flex: 1;
+  padding: 4px 10px; /* Set the same padding as the edit button */
+  height: 30px; /* Adjust the height to make the input fields smaller */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 70px;
+}
+
+/* Styling for the edit button */
+.edit-btn {
+  margin-top: 20px;
+}
+
+.edit-btn button {
+  padding: 10px 16px; /* Keep the same padding value */
+  font-size: 14px; /* Adjust the font size to match the smaller input fields */
+  background-color: #060606;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+  
+  .edit-btn button:hover {
+    background-color: #007bff;
+  }
+  
+  /* Styling for read-only inputs */
+  .user-details input[readonly] {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  /* Styling for form labels */
+  .user-details label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .field-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #006aff;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    animation: fade-in-out 3s ease-in-out;
+  }
+  
+  
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  /* For screen size up to 480px */
+@media (max-width: 480px) {
+  .user-profile {
+    width: 90%; 
+    margin-top: 150px;
+  }
+
+  .profile-pic {
+    margin-top: 30px;
+  }
+
+  .user-details div {
+    flex-direction: column; /* Stack the user details vertically */
+    margin-bottom: 10px;
+    
+  }
+
+  .user-details label {
+    width: 100%; /* Make labels take up the full width */
+    margin-bottom: 5px;
+  }
+
+  .user-details input {
+    padding: 8px; /* Adjust the padding for better touch interaction */
+    height: 40px;
+  }
+}
+
+/* For screen size up to 767px */
+@media (max-width: 767px) {
+  .user-profile {
+    width: 90%;
+    margin-top: 150px;
+  }
+
+  .profile-pic {
+    margin-top: 30px;
+  }
+
+  .user-details div {
+    margin-bottom: 10px;
+  }
+
+  .edit-btn button {
+    padding: 8px 14px; /* Slightly reduce button padding */
+  }
+}
+
+/* For screen size up to 1024px */
+@media (max-width: 1024px) {
+  .user-profile {
+    width: 90%;
+    margin-top: 150px;
+  }
+
+  .profile-pic {
+    margin-top: 50px;
+  }
+
+  .links li:not(:last-child) {
+    margin-right: -40px; /* Adjust the gap between links */
+  }
+}
+
+
+
+

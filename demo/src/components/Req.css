@@ -1,0 +1,599 @@
+body {
+  font-family: 'Arial', sans-serif;
+ 
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif; /* Use an appropriate font for headings */
+}
+
+header {
+  background-color: #f8f8f8; /* Add a light background color */
+ 
+  text-align: center;
+}
+h1.typeOfProject {
+  color: #333; /* Choose a readable text color */
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: -60px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    max-width: 1000px;
+  
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .buttonSet button {
+    background-color: rgb(46, 139, 87);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .buttonSet button:hover {
+    background-color: #0056b3;
+  }
+.prevProject{
+  background-color: #007bff;
+  margin-top: 30px;
+
+}
+.NewProject{
+  background-color: #6fb1f8;
+}
+.prevProject,
+.NewProject {
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+  margin-right: 10px; 
+}
+
+.prevProject:hover,
+.NewProject:hover {
+  background-color: #0056b3; 
+}
+.image-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  background: black;
+}
+
+.image-card p {
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .image-card img:hover {
+    opacity: 0.6;
+  } 
+
+
+/* The Choose the rooms that compose your project section */
+  .row2 {
+    display: flex;
+     justify-content: center;
+
+ 
+  }
+ 
+.boxes{
+  border: 5px solid rgb(0, 0, 0);
+  display: block;
+  border-radius: 5px;
+  height: 350px;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  
+  
+
+
+}
+
+.controls {
+ 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.controls button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0;
+  font-weight: bolder;
+  font-size: 35px;
+  margin-top: -240px;
+  margin-bottom: 150px;
+}
+
+.controls button:hover {
+  background-color: gray;
+}
+
+  
+  .box:hover {
+    opacity: 0.7;
+  }
+  
+  .quantity-counter {
+    display: block;
+    text-align: center;
+    padding-top: 130px;
+  }
+  
+  .quantity-counter button {
+    background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+ 
+  }
+  
+  .quantity-counter button:hover {
+    background-color: #0056b3;
+  }
+  
+.quantity-counter button.selected {
+  background-color: #0056b3; /* Change the background color for selected button */
+  }
+  .quantity-counter span {
+    font-size: 12px;
+  }
+  
+ 
+  .h2 {
+    padding: 10px 0;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+
+
+  /* Media Queries */
+  @media screen and (min-width: 480px) {
+    .row2 {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  
+    .box {
+      flex: 0 0 50%;
+    }
+  
+    .box > p {
+      font-size: 20px;
+    }
+  
+  }
+  
+  @media screen and (min-width: 768px) {
+    .row2 {
+      margin-left: 80px;
+      margin-right: 80px;
+    }
+  
+    .box {
+      flex: 0 0 33.33%;
+    }
+  
+    .box > p {
+      font-size: 22px;
+    }
+  }
+
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .footer-section a{
+    cursor: pointer;
+  }
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+  }
+
+
+/* Selected rooms section*/
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.room-selection {
+  background-color: #fefefe;
+ 
+  text-align: center;
+}
+
+.room-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.room {
+  background-color: #141313;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.room img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.room p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fffdfd;
+}
+
+.typeOfProject {
+  text-align: center;
+ }
+
+ .selectedRooms{
+   margin-left: -8px;
+   text-decoration: none;
+   color: #faf6f6;
+ }
+/* Top Front Page Section*/
+.typeOfProjectH{
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container2 img {
+  display: block;
+}
+
+.image-container2 .shading{
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 630px;
+ 
+}
+.shading{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 630px;
+  background-color: black;
+  opacity: 0.4;
+}
+/* Styling the carousel arrows */
+.carousel .control-prev.control-arrow:before,
+.carousel .control-next.control-arrow:before {
+    content: '';
+    display: block;
+    width: 70px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+    background-color: white;
+    border-radius: 3px;
+    position: relative;
+}
+
+.carousel .control-prev.control-arrow:before {
+    left: 30px; /* Adjust the position from the left as needed */
+}
+
+.carousel .control-next.control-arrow:before {
+    right: 30px; /* Adjust the position from the right as needed */
+}
+
+/* Styling the arrows inside the boxes */
+.carousel .control-prev.control-arrow:after{
+    content: '<'; /* Add the left arrow character for previous and right arrow character for next */
+    color: black; /* Set the arrow color to black */
+    font-size: 30px; /* Adjust the font size as needed */
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+.carousel .control-next.control-arrow:after{
+  content: '>'; /* Add the left arrow character for previous and right arrow character for next */
+  color: black; /* Set the arrow color to black */
+  font-size: 30px; /* Adjust the font size as needed */
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+/* Remove hover effects on arrows */
+.carousel .control-arrow:hover {
+    background: none;
+}
+
+.image-container2 .mainLine,
+.mainLine2 {
+  position: absolute;
+  top: 30%;
+  right: 24%;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+  width: 800px;
+}
+
+.mainLine2 {
+  top: 10%;
+  color: rgb(255, 255, 255);
+}
+.mainLine{
+  color: white;
+}
+.getStarted {
+  position: absolute;
+  top: 60%;
+  right: 45%;
+  padding: 10px;
+  width: 160px;
+  text-align: left;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.getStarted:hover{
+  background-color: rgb(20, 102, 254);
+}
+.getStarted a {
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.getStarted a:hover {
+  text-decoration: none;
+  color: #cecece;
+ 
+}
+
+.image-card.readonly {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+#getStarted {
+  margin-bottom: 50px;
+}
+.mainLine3{
+  margin-top: 10px;
+}
+
+/* Responsive styles for max-width: 480px */
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  .image-container2 .mainLine,
+  .mainLine {
+    font-size: 35px;
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .mainLineSpan{
+    font-size: 5px;
+  }
+  .room-selection h2{
+    font-size: medium;
+  }
+   .typeOfProject{
+    font-size: small;
+   }
+  .getStarted {
+    top: 80%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 120px;
+    padding: 10px;
+  }
+  .getStarted a {
+    font-size: smaller;
+    margin-left: 10px;
+  }
+  
+.house{
+  display: none;
+}
+}
+
+/* Responsive styles for max-width: 767px */
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  .image-container2 .mainLine,
+  .mainLine {
+    font-size: 40px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .getStarted {
+    top: 80%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 160px;
+    padding: 5px;
+  }
+  
+}
+
+@media screen and (min-width: 400px) and (max-width: 1400px){
+  .house{
+    display: none;
+  }
+}
+/* Responsive styles for max-width: 1024px */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .image-container2 .mainLine,
+  .mainLine {
+    font-size: 50px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .getStarted {
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 160px;
+   justify-content: center;
+   align-items: center;
+
+  }
+}
+
+.house{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+.mainLine{
+  width: 900px;
+  position: absolute;
+  top: 3500px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.containerReq {
+  
+  display: flex;
+  justify-content: space-between;
+ 
+  max-width: 1200px;
+  margin: 0 10%;
+  padding: 20px;
+}
+
+.left-side,
+.right-side {
+  width: 48%;
+  
+}
+
+
+.right-side {
+  position: relative;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.popup-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  box-sizing: border-box;
+  animation: slide-up 0.5s ease forwards;
+  
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .containerReq {
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .popup-text {
+    position: static;
+  }
+}
